@@ -1,4 +1,9 @@
 function initCursorLogic() {
+  // Skip the custom cursor entirely on touch devices
+  if (window.matchMedia("(hover: none), (pointer: coarse)").matches) {
+    return;
+  }
+
   let cursor = document.getElementById("cursor");
 
   const cursorWidth = cursor.offsetWidth;

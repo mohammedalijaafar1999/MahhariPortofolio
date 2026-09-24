@@ -7,13 +7,20 @@
 }
 /* ------------------------- Menu Burger Button ----------------------------- */
 #menu-burger {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   margin: 5rem;
   font-size: 3rem;
   padding: 0;
   display: inline-block;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  #menu-burger {
+    margin: 1.5rem;
+  }
 }
 
 .bar1,
@@ -136,6 +143,21 @@
   font-weight: 600;
   padding: 1vh 1vw 0;
   text-transform: uppercase;
+}
+
+/* Larger tap targets on small screens */
+@media (max-width: 768px) {
+  .menu__item {
+    min-height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu__item-link,
+  .marquee span {
+    font-size: 9vw;
+  }
 }
 
 .marquee span {

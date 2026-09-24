@@ -22,6 +22,18 @@
   cursor: none;
 }
 
+/* Touch devices: restore the native cursor and hide the custom one */
+@media (hover: none), (pointer: coarse) {
+  * {
+    cursor: auto;
+  }
+
+  .cursor,
+  .cursor_follower {
+    display: none;
+  }
+}
+
 /* -------------------- cursor ---------------------- */
 
 .cursor {

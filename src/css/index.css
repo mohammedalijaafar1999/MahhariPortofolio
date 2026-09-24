@@ -1,0 +1,27 @@
+/* -------------------- Hero typography (responsive) ---------------------- */
+
+.hero-title {
+  margin: 5rem 0 0 5rem;
+  color: #ff9432;
+  font-size: clamp(4rem, 16vw, 16rem);
+  line-height: 1;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  margin: -3rem 0 0 5rem;
+  color: #ffffff;
+  font-size: clamp(2rem, 8vw, 8rem);
+  line-height: 1.1;
+  font-weight: 100;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    margin: 4rem 0 0 1.5rem;
+  }
+
+  .hero-subtitle {
+    margin: -1rem 0 0 1.5rem;
+  }
+}
